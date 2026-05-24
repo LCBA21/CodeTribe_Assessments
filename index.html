@@ -2,96 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lesiba Ngoepe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header id="home">
-        <nav>
-            <div>
-                <img src="./images/logoImge.png" alt="logo" width="200" height="50">
-            </div>
-            
-            <br>
-            
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#footer">Footer</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
-    <br>
-
-    <main>
-        
-        <section>
-            <div>
-                <img src="./images/heroImage.png" alt="hero image" width="600" height="400">
-            </div>
-        </section>
-
-        <br>
-        <hr>
-        <br>
-
-        <section id="about">
-            <article>
-                <h1>Lesiba Ngoepe</h1>
+    <section class="portfolio-container">
+        <div class="portfolio-wrapper">
+            <div class="glass-card">
+                <div class="glass-overlay"></div>
                 
-                <p>
-                    <strong>About Me</strong> -Aspiring Software Developer with<br>
-             
-                </p>
-                
-                <p>
-                 a passion for creating innovative solutions.<br>
-                 Skilled in various programming languages and frameworks,<br>
-                 I am dedicated to continuous learning and growth in the tech industry. <br>
-                </p>
-            </article>
+                <header class="wire-header">
+                    <div class="logo-box">LCBA</div>
+                    <nav class="nav-links">
+                        <a href="#home" class="nav-item">Home</a>
+                        <a href="#about" class="nav-item">About me</a>
+                        <a href="#contact" class="nav-item">Contact Us</a>
+                    </nav>
+                </header>
 
-            <aside>
-                <div>
-                    <img src="./images/heroImage.png" alt="your image" width="300" height="300">
-                </div>
-            </aside>
-        </section>
+                <main class="main-layout">
+                    
+                    <section id="home" class="media-hero-block">
+                        <div class="media-placeholder">
+                            <i class="fa-regular fa-image media-icon"></i>
+                            <img
+                            src="./images/primaryImage.png" alt="Hero Image" class="media-hero-image"
+                            />
+                        </div>
+                    </section>
 
-    </main>
+                    <section id="about" class="bio-profile-split">
+                        <div class="bio-text-side">
+                            <h2>Lesiba Ngoepe</h2>
+                            <p class="bio-highlight">
+                                <strong>Bio</strong> - Passionate about creating innovative solutions and pairing robust backend logic with clean, expressive user interfaces.
+                            </p>
+                            <p class="bio-description">
+                                Skilled in modern programming languages, framework ecosystems, and web engineering. I am deeply dedicated to continuous learning, system performance optimizations, and technical growth within the engineering industry.
+                            </p>
+                            <div class="cta-container">
+                                <a href="mailto:lesiban56@gmail.com" class="btn-primary">
+                                    Get In Touch
+                                    <i class="fa-solid fa-arrow-up-right-from-square icon-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="avatar-display-side">
+                            <div class="circular-image-wrapper">
+                                <div class="avatar-glow"></div>
+                                <img src="./images/secondaryImage.png" alt="Lesiba Ngoepe" class="wire-avatar-img">
++                            </div>
+                        </div>
+                    </section>
+                </main>
 
-    <br>
-    <hr>
-    <br>
+                <footer id="contact" class="wire-footer-grid">
+                    <div class="footer-left-contact">
+                        <address class="address-text">
+                            <i class="fa-solid fa-location-dot"></i> Mokopane, South Africa
+                        </address>
+                        
+                        <div class="circular-social-row">
+                            <a href="https://www.linkedin.com/in/lesibana-ngoepe-junior-software-developer/" target="_blank" rel="noopener noreferrer" class="circle-social-btn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/LCBA21" target="_blank" rel="noopener noreferrer" class="circle-social-btn" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
 
-    <footer id="footer">
-        
-        <div id="contact">
-            <address>
-                Mokopane
-            </address>
-            <p>Email: lesiba.ngoepe@example.com</p>
-            <p>Phone: +27 12 345 6789</p>
-            
-            <ul>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            </ul>
+                    <div class="footer-center-links">
+                        <p class="quick-links-title">additional quick links</p>
+                        <ul class="quick-links-list">
+                            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Back to Top</a></li>
+                            <li><a href="mailto:lesiban56@gmail.com"><i class="fa-solid fa-envelope"></i> Email Developer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-right-map">
+                        <div class="map-embed-container">
+                            <i class="fa-solid fa-map-location-dot map-icon"></i>
+                            <p class="map-text">embed map</p>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
         </div>
-
-        <!-- <div>
-            <p>additional quick links</p>
-        </div> -->
-
-        <div>
-            <p>embed map</p>
-        </div>
-
-    </footer>
+    </section>
 
 </body>
 </html>
